@@ -59142,6 +59142,16 @@
 		)
 		(uuid "04e73c62-8200-47a8-890c-6f243edda9fc")
 	)
+	(label "PHI2"
+		(at 434.34 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05b2707a-da78-47a1-956e-207e80b57d4f")
+	)
 	(label "~{PGFD}"
 		(at 739.14 434.34 0)
 		(effects
