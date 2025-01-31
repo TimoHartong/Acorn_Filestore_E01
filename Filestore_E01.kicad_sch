@@ -987,8 +987,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
+			(property "Reference" "U2"
+				(at 0.254 -9.906 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -996,7 +996,7 @@
 				)
 			)
 			(property "Value" "MC146818"
-				(at 0 0 0)
+				(at 0.254 -13.462 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1222,7 +1222,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin open_collector line
 					(at 12.7 -20.32 180)
 					(length 2.54)
 					(name "~{IRQ}"
@@ -41541,12 +41541,6 @@
 		(uuid "4e7ef47e-102a-444d-a379-233120581456")
 	)
 	(junction
-		(at 586.74 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ed9db95-36c2-42d9-9535-13c94b17a449")
-	)
-	(junction
 		(at 660.4 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -47496,6 +47490,16 @@
 			(type default)
 		)
 		(uuid "3bba05aa-380f-4940-aa57-9d73d3c54e32")
+	)
+	(wire
+		(pts
+			(xy 586.74 96.52) (xy 586.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bcfcbc0-88d7-4864-9796-9f41da27844a")
 	)
 	(wire
 		(pts
@@ -53977,6 +53981,16 @@
 		)
 		(uuid "acd25053-e164-42f3-b853-ce573142ffe6")
 	)
+	(wire
+		(pts
+			(xy 134.62 218.44) (xy 134.62 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acef7b90-e4fb-4c5b-af6a-41b092eeb290")
+	)
 	(bus
 		(pts
 			(xy 422.91 73.66) (xy 422.91 76.2)
@@ -55079,16 +55093,6 @@
 	)
 	(wire
 		(pts
-			(xy 586.74 99.06) (xy 586.74 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c167731d-ec1c-4732-a3ad-41ddc5e0f0a9")
-	)
-	(wire
-		(pts
 			(xy 548.64 441.96) (xy 548.64 447.04)
 		)
 		(stroke
@@ -55106,16 +55110,6 @@
 			(type default)
 		)
 		(uuid "c16c8115-3506-49fe-b3cd-16ebd996d0e6")
-	)
-	(wire
-		(pts
-			(xy 586.74 96.52) (xy 586.74 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1a36384-5ed6-4ce8-a8f1-2a442e76aba7")
 	)
 	(wire
 		(pts
@@ -55716,6 +55710,16 @@
 			(type default)
 		)
 		(uuid "cb86cb4b-f856-4d1b-928a-e0a22bec1f92")
+	)
+	(wire
+		(pts
+			(xy 223.52 204.47) (xy 223.52 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb9a5d9e-6301-4d3d-8a9d-130f916d4ce0")
 	)
 	(wire
 		(pts
@@ -58339,16 +58343,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 218.44) (xy 134.62 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6f93aeb-5db6-4c7f-9709-c31fc085244d")
-	)
-	(wire
-		(pts
 			(xy 758.19 66.04) (xy 758.19 68.58)
 		)
 		(stroke
@@ -58951,6 +58945,16 @@
 			)
 		)
 		(uuid "26c0327d-d5e3-44d1-8d46-c6c6c4fd9ebe")
+	)
+	(text "U29 = 7416\n"
+		(exclude_from_sim no)
+		(at 704.342 91.948 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b08c465-ebf3-4b14-b124-5bae187cdd06")
 	)
 	(text "MOS"
 		(exclude_from_sim no)
@@ -70329,7 +70333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60bcdc62-fac6-4d68-befe-b4bcd70d5529")
-		(property "Reference" "U11"
+		(property "Reference" "U33"
 			(at 548.64 178.054 0)
 			(effects
 				(font
@@ -70417,7 +70421,7 @@
 		(instances
 			(project ""
 				(path "/8b1de929-f561-4d06-8ee9-44ad55095b8f"
-					(reference "U11")
+					(reference "U33")
 					(unit 4)
 				)
 			)
@@ -71737,7 +71741,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 134.62 220.98 0)
+		(at 134.62 222.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -71746,7 +71750,7 @@
 		(fields_autoplaced yes)
 		(uuid "72e8eb71-65bb-4146-8d45-d43e81c3617c")
 		(property "Reference" "#PWR089"
-			(at 134.62 227.33 0)
+			(at 134.62 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71755,7 +71759,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 134.62 224.79 0)
+			(at 134.62 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71764,7 +71768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 220.98 0)
+			(at 134.62 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71773,7 +71777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 220.98 0)
+			(at 134.62 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -71782,7 +71786,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 134.62 220.98 0)
+			(at 134.62 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72632,6 +72636,71 @@
 			(project "Filestore_E01"
 				(path "/8b1de929-f561-4d06-8ee9-44ad55095b8f"
 					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 223.52 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e33ea74-33dc-4559-9534-549c22b49d9c")
+		(property "Reference" "#PWR0103"
+			(at 223.52 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 223.52 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 223.52 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e88fabe-c8a2-4ec5-803f-1a20151e9c2b")
+		)
+		(instances
+			(project "Filestore_E01"
+				(path "/8b1de929-f561-4d06-8ee9-44ad55095b8f"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -74971,73 +75040,6 @@
 			(project "Filestore_E01"
 				(path "/8b1de929-f561-4d06-8ee9-44ad55095b8f"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 586.74 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9915d672-2201-4a41-87e0-9a9342b3b530")
-		(property "Reference" "#PWR026"
-			(at 586.74 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 586.74 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 586.74 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 586.74 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 586.74 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63c15ec7-75de-415c-859b-ec87dbcb3593")
-		)
-		(instances
-			(project "Filestore_E01"
-				(path "/8b1de929-f561-4d06-8ee9-44ad55095b8f"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)
