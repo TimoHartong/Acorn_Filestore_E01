@@ -58921,6 +58921,17 @@
 		)
 		(uuid "201c97fc-7d69-4950-9db7-8936d7066c8c")
 	)
+	(text "Miscellaneous functions latch\nbit 0  Floppy 1 (left) select\nbit 1  Floppy 2 (right) select\nbit 2  Floppy side (0|1) select\nbit 3  Access to NVRAM possible if set\nbit 4  FDC Disc Density (active low)\nbit 5  FDC MasterReset (active low)\nbit 6  FDC Test (active low)\nbit 7  Mode (red) LED"
+		(exclude_from_sim yes)
+		(at 446.024 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "206b9a84-f0dd-4394-ac64-f52e859028d5")
+	)
 	(text "MOLEX\nLED CONN."
 		(exclude_from_sim no)
 		(at 501.65 70.866 0)
